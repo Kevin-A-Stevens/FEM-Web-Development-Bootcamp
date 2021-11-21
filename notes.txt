@@ -31,5 +31,13 @@ Open and close tags
 Self closing tags
 < />
 
+Attributes = Additional information you can attach to HTML tags
+Classes = Any tag can have a class. Used for styling in CSS
+IDs = Can only have 1 of an ID on a page. Used for styling also.
+IDs also have specific use case such as linking.
+With classes, name things after what they DO, NOT what they look like (semantic)
+
+CSS = Cascading Style Sheets
+
 
 
