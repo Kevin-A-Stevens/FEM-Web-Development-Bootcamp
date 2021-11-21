@@ -1,0 +1,35 @@
+Website: FrontEndMasters
+Instructor: Brian Holt
+Catch up with him on Twitter, Instagram, GitHub, LinkedIn
+
+https://btholt.github.io/intro-to-web-dev-v2/
+
+HTML: Frame of Web page
+CSS: Colors and where everything goes and looks like on your web page
+JavaScript: Programming language of the web. Adds interactivity to your web page
+Node.js: Server side programming using JavaScript
+
+Tools:
+The Browser: Firefox
+
+Editor: VS Code
+
+Resources: MDN, CSS Tricks
+
+Book: Frontend Handbook
+
+HTML = Hyper Text Markup Language
+Tag = Basic Building blocks of HTML
+
+Header Tag = There are six total, h1 to h6
+<h1>Title</h1>
+<h2>Sub Title</h2>
+using good semantic tags helps if someone needs to use a screen reader
+
+Open and close tags
+< > < />
+Self closing tags
+< />
+
+
+
