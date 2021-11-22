@@ -1,0 +1,81 @@
+/* color = changes font color
+font-size = changes size of the font
+font-weight = changes boldness
+text-decoration = removes or adds decoration like an underline
+text-transform = transforms text such as to/from uppercase (Don't use for different languages)
+border = adds a border around element(s)
+em = sizes measured according to your font size
+rem = sizes based on the root level based on body font size
+
+codepen = CSS playground
+
+text-align = move text (left right center)
+font-family = changes type of font
+list-style = change types of lists
+
+CSS Selectors and the Cascade
+Style on classes almost all of the time
+style on tags only if everything on your web page needs to look the same
+Avoid using the cascade as much as possible
+Cascade = The rule that comes last wins
+Specific = What is more specific wins
+classes are more specific than tags
+
+ID class tag = 0 0 0
+
+Do not style by IDs or !important
+
+Pseudo-classes = when you want to change elements based on what happens on certain events
+h1:hover - hover is a pseud-class. 
+Others are focus, active, checked, first-child, last-child, and nth-child
+
+wildcard selector - only use this with the wildcard */
+* {
+  box-sizing: border-box;
+}
+
+/*
+The CSS Box Model
+
+display = what mode an element has 
+Every element has a default display, either block or inline
+block = takes 100% width or as much as it can
+inline = fit inline of text. does not respect width
+inline-block = try and put itself inline text but still respects width and height
+none: does not display at all
+
+Box = content - padding - border - margin
+*/
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  /* flex-direction: column; */
+  justify-content: center; /* left and right */
+  align-items: center; /* up and down */
+}
+
+.box-1 {
+  border: 1px solid black;
+  color: white;
+  background-color: blue;
+  height: 150px;
+  width: 300px;
+}
+
+.box-2 {
+  border: 1px solid black;
+  color: white;
+  background-color: red;
+  height: 100px;
+  width: 300px;
+}
+
+.box-3 {
+  border: 1px solid black;
+  color: white;
+  background-color: green;
+  height: 200px;
+  width: 100px;
+}
