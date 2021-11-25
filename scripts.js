@@ -29,3 +29,20 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(myFriends);
+
+function addTwo(number) {
+  return number + 2;
+}
+
+const finalAnswer = addTwo(5);
+console.log(finalAnswer);
+
+const sentanceLower = "This was Wierd Casing";
+console.log(sentanceLower.toLowerCase());
+console.log(sentanceLower.toUpperCase());
+console.log(Math.round(6.7131321));
+console.log(Math.floor(6.7131321));
+console.log(Math.ceil(6.2131321));
+
+const name = "Kevin Stevens";
+console.log(name.substr(4, 4));
