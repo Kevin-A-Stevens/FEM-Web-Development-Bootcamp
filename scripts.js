@@ -46,3 +46,12 @@ console.log(Math.ceil(6.2131321));
 
 const name = "Kevin Stevens";
 console.log(name.substr(4, 4));
+
+const person = {
+  name: "Kevin Stevens",
+  city: "Hampshire",
+  state: "TN",
+};
+console.log(person);
+console.log(person.name);
+console.log(person.state);
