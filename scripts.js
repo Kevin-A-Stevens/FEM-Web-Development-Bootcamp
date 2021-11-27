@@ -55,3 +55,25 @@ const person = {
 console.log(person);
 console.log(person.name);
 console.log(person.state);
+
+const daysOfTheWeek = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
+console.log(daysOfTheWeek[2]);
+console.log(daysOfTheWeek.length);
+console.log(daysOfTheWeek.join(" | "));
+
+let numberOfTimesRan = 0;
+daysOfTheWeek.forEach(function (day) {
+  numberOfTimesRan++;
+  console.log(day.toLowerCase());
+});
+
+console.log(numberOfTimesRan);
