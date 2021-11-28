@@ -39,5 +39,9 @@ With classes, name things after what they DO, NOT what they look like (semantic)
 
 CSS = Cascading Style Sheets
 
+DOM - How javascript interacts with HTML and CSS
 
+window.document = refers to the HTML page that you are on
+querySelector = first instance on a page
+querySelectorAll = all instances on a page. Gives back an array
 
