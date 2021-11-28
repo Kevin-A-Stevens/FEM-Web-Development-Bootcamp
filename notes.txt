@@ -52,3 +52,35 @@ npm install popmotion
 parcel index.html
 copy and paste link given. This is your local Server
 
+git and bash
+sourcetree is also popular
+git init
+leaves a .git directory
+git add -A
+git status
+git commit -m "commit for calculator"
+git status
+git diff = shows what has changed
+git add index.html
+git log = shows past commits
+git pull
+git clone
+git merge
+git rebase
+git stash
+git checkout
+git branch
+
+pin you good repositories to your profile page on GitHub
+create a new repository
+copy the git remote add origin git@message
+This is under the ..or push an existing repository from command line
+git remote -vv
+git log
+git push origin master
+fork - interested in changing your own copy of code you like
+You can star repos and like the ones you feel are great
+
+choosing a license.com  = get a git hub license to attach to your projects
+express framework for Node
+
