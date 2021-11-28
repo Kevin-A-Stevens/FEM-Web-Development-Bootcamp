@@ -85,3 +85,45 @@ document.querySelector(".button-container"),
     console.log(`You clicked on button ${event.target.innerText}`);
     //}
   });
+
+// getting data from an API
+/*
+const BREEDS_URL = "https://dog.ceo/api/breeds/image/random";
+const promise = fetch(DOG_URL);
+
+promise
+  .then(function (response) {
+    const processingPromise = response.json();
+    return processingPromise;
+  })
+  .then(function (processingResponse) {
+    console.log(breeds);
+  });
+
+console.log("this will log first");
+*/
+
+const DOG_URL = "https://dog.ceo/api/breeds/image/random";
+
+const doggos = document.querySelector(".doggos");
+
+function addNewDoggo() {
+  const promise = fetch(DOG_URL);
+
+  promise
+    .then(function (response) {
+      const processingPromise = response.json();
+      return processingPromise;
+    })
+    .then(function (processingResponse) {
+      const img = document.createElement("img");
+      img.src = processingResponse.message;
+      img.alt = "Cute doggo";
+      doggos.appendChild(img);
+    });
+}
+
+document.querySelector(".add-doggo").addEventListener("click", addNewDoggo);
+
+// Integrating with other libraries people have written
+// https://popmotion.io/

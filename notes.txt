@@ -45,3 +45,10 @@ window.document = refers to the HTML page that you are on
 querySelector = first instance on a page
 querySelectorAll = all instances on a page. Gives back an array
 
+API = Somewhere to request data From // may have to run these with sudo
+npm install --global parcel-bundler
+npm init -y
+npm install popmotion
+parcel index.html
+copy and paste link given. This is your local Server
+
