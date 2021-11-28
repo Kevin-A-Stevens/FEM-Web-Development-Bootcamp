@@ -77,3 +77,11 @@ daysOfTheWeek.forEach(function (day) {
 });
 
 console.log(numberOfTimesRan);
+
+// Adding one event listenter to a group of buttons. Add a div with a container class
+document.querySelector(".button-container"),
+  addEventListener("click", function (event) {
+    // if (event.target.tagName === "button") {
+    console.log(`You clicked on button ${event.target.innerText}`);
+    //}
+  });
