@@ -84,3 +84,15 @@ You can star repos and like the ones you feel are great
 choosing a license.com  = get a git hub license to attach to your projects
 express framework for Node
 
+Kyle Simpson course
+Three pillars of JavaScript
+1. Types and Coercion
+2. Scope and Closures
+3. This keyword and Prototypes
+
+statement: var age = 38;
+expression: age = 38
+age = 1 + (age * 2);
+expressions: age, 2, (age * 2), 1, 1 + (age * 2)
+
+
