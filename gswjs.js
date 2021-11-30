@@ -53,3 +53,12 @@ addFavoriteBookName("Crime & Punishment");
 console.log(favoriteBooks);
 
 printFavoriteBooks();
+
+// 1. Types and Coercion
+// ---------------------
+
+// 2. Scope and Closures
+// ---------------------
+
+// 3. This keyword and Prototypes
+// ------------------------------
