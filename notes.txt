@@ -54,6 +54,8 @@ copy and paste link given. This is your local Server
 
 git and bash
 sourcetree is also popular
+
+Know these popular git commands
 git init
 leaves a .git directory
 git add -A
