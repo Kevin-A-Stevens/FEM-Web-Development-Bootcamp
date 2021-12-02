@@ -97,4 +97,22 @@ expression: age = 38
 age = 1 + (age * 2);
 expressions: age, 2, (age * 2), 1, 1 + (age * 2)
 
+/// Three Pillars of JavaScript
+// 1. Types and Coercion
+// ---------------------
+// Primitive Types, Converting Types, Checking Equality
+//Primitive Types
+// In JS, everything is an Object = False
+// Undefined, String, number, boolean, object, symbol
+// JS variables do not have types, values do
+
+Use New on Object(), Array(), Function(), Date(), RefExp(), Error()
+Do Not use new on String(), Number(), Boolean()
+
+// 2. Scope and Closures
+// ---------------------
+
+// 3. This keyword and Prototypes
+// ------------------------------
+
 

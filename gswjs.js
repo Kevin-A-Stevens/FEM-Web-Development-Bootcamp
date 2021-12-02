@@ -54,8 +54,14 @@ console.log(favoriteBooks);
 
 printFavoriteBooks();
 
+/// Three Pillars of JavaScript
 // 1. Types and Coercion
 // ---------------------
+let greeting = "Hello";
+let something = greeting / 2;
+console.log(something);
+let isNotANumber = Number.isNaN(something); // true
+let isNotANumber2 = Number.isNaN(greeting); // false
 
 // 2. Scope and Closures
 // ---------------------
