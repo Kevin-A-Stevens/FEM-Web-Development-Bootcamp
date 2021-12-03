@@ -109,6 +109,8 @@ expressions: age, 2, (age * 2), 1, 1 + (age * 2)
 Use New on Object(), Array(), Function(), Date(), RefExp(), Error()
 Do Not use new on String(), Number(), Boolean()
 
+// Coercion = The way to convert from one type to another
+
 // 2. Scope and Closures
 // ---------------------
 

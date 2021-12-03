@@ -63,6 +63,17 @@ console.log(something);
 let isNotANumber = Number.isNaN(something); // true
 let isNotANumber2 = Number.isNaN(greeting); // false
 
+let msg1 = "There are ";
+let numStudents = 16;
+let msg2 = " students.";
+console.log(msg1 + numStudents + msg2);
+
+// The +"" inside the `` are another way to convert the number to a string
+console.log(`There are ${numStudents + ""} students.`);
+// "There are 16 students"
+// The number 16 is coersed into a string. This is coercion
+// 16 has to be converted to a string so the + sign can put the strings together
+
 // 2. Scope and Closures
 // ---------------------
 
