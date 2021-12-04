@@ -74,8 +74,94 @@ console.log(`There are ${numStudents + ""} students.`);
 // The number 16 is coersed into a string. This is coercion
 // 16 has to be converted to a string so the + sign can put the strings together
 
-// 2. Scope and Closures
-// ---------------------
+let studentName1 = "Frank";
+let studentName2 = `${studentName1}`; // string to string = no coercion
 
-// 3. This keyword and Prototypes
-// ------------------------------
+let workEnrollment1 = 16;
+let workEnrollment2 = workEnrollment1 + 0; // number to number = no coercion
+
+console.log(studentName1 == studentName2); // true same types
+console.log(studentName1 === studentName2); // true same types
+console.log(workEnrollment1 == workEnrollment2); //  true same types
+console.log(workEnrollment1 === workEnrollment2); //  true same types
+
+// 2, Scope and closures
+let teacher = "Kyle";
+
+function otherClass() {
+  teacher = "Suzy"; // no declaration so JS looks for teacher in the outer scope
+  topic = "React";
+  console.log("Welcome!");
+}
+
+otherClass(); // Welcome!
+
+console.log(teacher); // Suzy
+console.log(topic); // React
+
+// Function expression = a function assigned to a variable
+let clickHandle = function () {
+  // anonymous function expression
+  //....
+};
+
+let keyHandle = function keyHandle() {
+  // named function expression
+  //...
+};
+// prefer named function expressions as the name tells you what they are doing
+let ids = people.map((person) => person.id);
+let ids = people.map(function getId(person) {
+  // can tell what the function does
+  return person.id;
+});
+
+// Function scoping: IIFE Immediately Invoked Function expression
+// A common pattern - use when you need to protect the variable from using the outer scope
+let teacher3 = "Kevin";
+(function teacher4() {
+  let teacher2 = "Suzy";
+  console.log(teacher2); // Suzy
+})(); // () executes this function immediately
+
+console.log(teacher2); // Kevin
+
+// Block scoping are used instead of the IIFE above
+var teacher = "Kevin";
+{
+  let teacher = "Suzy"; // use the let keyword to protect the variable
+  console.log(teacher); // Suzy
+}
+
+console.log(teacher); // Kyle
+
+// Use var at the function level
+function repeat(fn, n) {
+  var result;
+
+  for (let i = 0; i < n; i++) {
+    // use let inside the block of an if or for loop
+    result = fn(result, i);
+  }
+  return result;
+}
+
+// Closure
+function ask(question) {
+  setTimeout(function waitASec() {
+    console.log(question);
+  }, 100);
+}
+
+ask("What is a closure?");
+// What is a closure?
+// WaitASec as a function has closure over the question variable
+
+// Another example
+function ask(question) {
+  return function holdYourQuestion() {
+    console.log(question);
+  };
+}
+var myQuestion = ask("What is closure?");
+myQuestion(); // What is closure?

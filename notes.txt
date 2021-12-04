@@ -110,11 +110,21 @@ Use New on Object(), Array(), Function(), Date(), RefExp(), Error()
 Do Not use new on String(), Number(), Boolean()
 
 // Coercion = The way to convert from one type to another
+// False values = "", 0, -0, null, NaN, false, undefined
+// true values = everything else
+// A quality JS program embraces coercions, making sure the types are clear
+// == allows coercion (types different) - use when types are the same
+// === disallows coercion (types same)
 
 // 2. Scope and Closures
 // ---------------------
+// Scope = Where the JS engines looks for things
+// Closure = when a function remembers the variables outside of it, even if you pass that function 
+// elsewhere
 
 // 3. This keyword and Prototypes
 // ------------------------------
+// A functions this keyword references the execution context for that call, determined entirely
+// how the function was called
 
 
