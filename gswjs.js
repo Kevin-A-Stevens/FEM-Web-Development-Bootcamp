@@ -165,3 +165,77 @@ function ask(question) {
 }
 var myQuestion = ask("What is closure?");
 myQuestion(); // What is closure?
+
+// this keyword
+var workshop = {
+  teacher: "Kyle",
+  ask(question) {
+    console.log(this.teacher, question);
+  },
+};
+
+// This is the line that determines what the this keyword is pointing at
+workshop.ask("What is implicit binding?"); // Kyle What is implicit binding?
+// this points to workshop which is why it prints out Kyle
+
+// Another exmaple
+function ask(question) {
+  console.log(this.teacher, question);
+}
+
+function ohterClass() {
+  var myContext = {
+    teacher: "Suzy",
+  };
+  // This next line calls the function and determines what this points at
+  ask.call(myContext, "Why?"); // Suzy Why?
+}
+
+otherClass();
+
+// 3 Pillars of JS exercize
+
+class Bookshelf {
+  constructor() {
+    this.favoriteBooks = [];
+  }
+
+  addFavoriteBook(bookName) {
+    if (!bookName.includes("Great")) {
+      this.favoriteBooks.push(bookName);
+    }
+  }
+
+  printFavoriteBook() {
+    console.log(`Favorite Books: ${String(this.favoriteBooks.length)}`);
+    for (let bookName of this.favoriteBooks) {
+      console.log(bookName);
+    }
+  }
+}
+
+function loadBooks(theBookshelf) {
+  fakeAjax(BOOK_API, function onBooks(bookNames) {
+    for (let bookName of bookNames) {
+      theBookshelf.addFavoriteBook(bookName);
+    }
+    theBookshelf.printFavoriteBooks();
+  });
+}
+
+var BOOK_API = "https://some.url/api";
+
+var myBooks = new Bookshelf();
+loadBooks(myBooks);
+
+function fakeAjax(url, cb) {
+  setTimeout(function fakeLoadingDelay() {
+    cb([
+      "A Song of Ice and Fire",
+      "The Great Gatsby",
+      "Crime & Punishment",
+      "Great Expectations",
+      "You Don't Know JS",
+    ]);
+  }, 500);
+}
