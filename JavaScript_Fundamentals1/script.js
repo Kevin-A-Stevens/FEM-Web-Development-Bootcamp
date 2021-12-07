@@ -55,3 +55,22 @@ console.log(x); // 100
 // comparison operators
 console.log(ageKevin > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
+
+// Operator precedence
+console.log(now - 1991 > now + 2010);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table -- under table. Pay attention to left-right and right-left
+
+// BMI = mass / height ** 2 = mass / (height * height)
+
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI);
+console.log(markHigherBMI);
