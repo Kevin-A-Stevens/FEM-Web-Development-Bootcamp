@@ -74,3 +74,20 @@ const markHigherBMI = markBMI > johnBMI;
 
 console.log(markBMI, johnBMI);
 console.log(markHigherBMI);
+
+// Template Literals
+const myFirstName = "Kevin";
+const myJob = "Web Developer";
+const myBirthYear = 1967;
+const currentYear = 2021;
+
+const myInfo = `I'm ${myFirstName}, a ${
+  currentYear - myBirthYear
+} year old ${myJob}.`;
+console.log(myInfo);
+
+// Template Literals with multiple lines - just use <Enter>
+console.log(`String
+with
+multiple
+lines`);
