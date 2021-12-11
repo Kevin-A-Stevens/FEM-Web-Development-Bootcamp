@@ -112,3 +112,16 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
+
+// Conversion and Coercion
+// Conversion = manually convert from one type to another
+// Coercion = Java scripts converts behind the scenes
+
+const inputYear = "1991";
+console.log(Number(inputYear)); // Conversion
+console.log(Number(inputYear) + 18); // Conversion
+console.log(String(23)); // Conversion from number to string
+
+console.log("I am " + 23 + " years old"); // Coercion The + triggers number to string coercion
+console.log("23" - "10" - 3); // Coercion The - triggers string to number coercion
+console.log("23" * 2); // Coercion string to numbers also work with * and /
