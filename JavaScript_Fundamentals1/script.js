@@ -125,3 +125,16 @@ console.log(String(23)); // Conversion from number to string
 console.log("I am " + 23 + " years old"); // Coercion The + triggers number to string coercion
 console.log("23" - "10" - 3); // Coercion The - triggers string to number coercion
 console.log("23" * 2); // Coercion string to numbers also work with * and /
+
+// == and ===
+// == does type coercion
+console.log("18" == 18); // true
+// === does not do type coercion
+console.log("18" === 18); // false
+
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision); // false
+console.log(hasDriversLicense || hasGoodVision); // true
+console.log(!hasDriversLicense); // false
