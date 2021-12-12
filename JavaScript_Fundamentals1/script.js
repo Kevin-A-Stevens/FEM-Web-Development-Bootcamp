@@ -164,3 +164,12 @@ switch (day) {
   default:
     console.log("Not a valid day");
 }
+
+// Ternary - three parts are condition, if, and else
+const myAge = 54;
+age >= 18 // condition
+  ? console.log("I like to drink Cola") // if
+  : console.log("I like to drink Hot chocolate"); // else
+
+const drink = age >= 18 ? "Cola" : "Hot Chocolate";
+console.log(drink);
