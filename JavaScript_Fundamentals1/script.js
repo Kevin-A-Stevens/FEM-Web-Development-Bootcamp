@@ -138,3 +138,29 @@ const hasGoodVision = false;
 console.log(hasDriversLicense && hasGoodVision); // false
 console.log(hasDriversLicense || hasGoodVision); // true
 console.log(!hasDriversLicense); // false
+
+// Switch statement
+const day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Plan course");
+    console.log("Go to coding meetup");
+    break;
+  case "Tuesday":
+    console.log("Prepare videos");
+    break;
+  case "Wednesday":
+  case "Thursday":
+    console.log("Write code examples");
+    break;
+  case "Friday":
+    console.log("Record videos");
+    break;
+  case "Saturday":
+  case "Sunday":
+    console.log("enjoy the weekend");
+    break;
+  default:
+    console.log("Not a valid day");
+}
