@@ -37,3 +37,30 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(2021);
 console.log(age1, age2);
+
+// Arrow functions
+const calcAge3 = (birthYear) => 2021 - birthYear; // value automatically returned
+const age3 = calcAge3(1967);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age4 = 2021 - birthYear;
+  const retirement = 65 - age4;
+  return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1967, "Kevin"));
+
+// Calling other functions
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor2(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} pieces of oranges.`;
+  return juice; // Returns a value that can be used anywhere in your code
+}
+
+console.log(fruitProcessor2(2, 3));
