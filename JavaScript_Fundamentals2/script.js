@@ -64,3 +64,32 @@ function fruitProcessor2(apples, oranges) {
 }
 
 console.log(fruitProcessor2(2, 3));
+
+// Arrays
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const y = new Array(1992, 1984, 2008, 2020);
+console.log(friends[0]);
+
+console.log(friends.length); // amount of elements in the array
+console.log(friends[friends.length - 1]); // gives last element in the array
+
+friends[2] = "Jayce"; // Change an element in an array
+console.log(friends);
+
+const firstName = "Kevin";
+const kevin = [firstName, "Stevens", 2021 - 1967, "Developer", friends];
+console.log(kevin);
+
+const CalcAges = function (birthYear) {
+  return 2021 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 1999];
+
+const ages1 = CalcAges(years[0]);
+const ages2 = CalcAges(years[1]);
+const ages3 = CalcAges(years[2]);
+const ages4 = CalcAges(years[years.length - 1]);
+console.log(ages1, ages2, ages3, ages4);
