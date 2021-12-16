@@ -93,3 +93,30 @@ const ages2 = CalcAges(years[1]);
 const ages3 = CalcAges(years[2]);
 const ages4 = CalcAges(years[years.length - 1]);
 console.log(ages1, ages2, ages3, ages4);
+
+// Array Methods
+// push - adds elements to the end of an array
+const newFriends = friends.push("Jay"); // returns length of the array
+console.log(friends);
+console.log(newFriends); // 4
+
+// unshift - adds to the beginning of an array
+friends.unshift("John");
+console.log(friends);
+
+// pop - removes last element of an array
+const popped = friends.pop(); // returns the removed element
+console.log(friends);
+console.log(popped); // jay
+
+// shift - remove first element from an array
+friends.shift();
+console.log(friends);
+
+// indexOf - gives index of an element inside the array
+console.log(friends.indexOf("Steven")); // 1
+
+// includes - returns true or false whether an element is in the array. Uses strict equality
+// strict equality means it does not use type coercion
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
