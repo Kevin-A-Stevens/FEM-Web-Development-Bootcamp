@@ -120,3 +120,5 @@ console.log(friends.indexOf("Steven")); // 1
 // strict equality means it does not use type coercion
 console.log(friends.includes("Steven"));
 console.log(friends.includes("Bob"));
+
+// Objects
