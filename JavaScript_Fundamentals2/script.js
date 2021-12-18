@@ -152,3 +152,54 @@ console.log(kevinInfo.calcAge4());
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}`);
 }
+
+// Looping through an array
+const kevinArray = [
+  "Kevin",
+  "Stevens",
+  2021 - 1967,
+  "Developer",
+  ["Maurice", "Angel", "Bill"],
+];
+
+for (let i = 0; i <= kevinArray.length; i++) {
+  console.log(kevinArray[i]);
+}
+
+// Continue and break
+
+// Print only strings using continue
+for (let i = 0; i <= kevinArray.length; i++) {
+  if (typeof kevinArray[i] !== "string") continue;
+  console.log(kevinArray[i]);
+}
+
+// After a number is found, print nothing else using break
+for (let i = 0; i <= kevinArray.length; i++) {
+  if (typeof kevinArray[i] === "number") break;
+  console.log(kevinArray[i]);
+}
+
+console.log("-------------------");
+
+// Looping over an Array backwards
+for (let i = kevinArray.length - 1; i >= 0; i--) {
+  console.log(kevinArray[i]);
+}
+
+console.log("--------------------");
+
+// while loop
+let rep1 = 1;
+while (rep1 <= 10) {
+  console.log(`Lifting weights repetition ${rep1}`);
+  rep1++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
