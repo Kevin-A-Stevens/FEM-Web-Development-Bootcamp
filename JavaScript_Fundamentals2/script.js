@@ -147,3 +147,8 @@ console.log(kevinInfo["lastName"]); // bracket notation
 // Object Methods
 console.log(kevinInfo.calcAge4());
 // console.log(kevinInfo["calcAge4"](1967));
+
+// For loop
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
