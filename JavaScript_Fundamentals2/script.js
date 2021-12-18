@@ -122,3 +122,28 @@ console.log(friends.includes("Steven"));
 console.log(friends.includes("Bob"));
 
 // Objects
+
+const kevinInfo = {
+  firstName: "Kevin",
+  lastName: "Stevens",
+  birthYear: 1967,
+  job: "Developer",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+  // calcAge4: function (birthYear) {
+  //   return 2021 - birthYear;
+  // },
+
+  calcAge4: function () {
+    console.log(this);
+    return 2021 - this.birthYear; // kevinInfo.birthYear
+  },
+};
+
+// Dot and Bracket notation
+console.log(kevinInfo.lastName); // dot notation
+console.log(kevinInfo["lastName"]); // bracket notation
+
+// Object Methods
+console.log(kevinInfo.calcAge4());
+// console.log(kevinInfo["calcAge4"](1967));
