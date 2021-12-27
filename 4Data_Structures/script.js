@@ -118,3 +118,15 @@ const [pizza, , risotto, ...otherFood] = [
   ...restaurant.starterMenu,
 ];
 console.log(pizza, risotto, otherFood);
+
+// for of loop
+console.log("--------------------------------");
+const anotherMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+for (const item of anotherMenu) {
+  console.log(item);
+}
+
+console.log("------------------------");
+for (const [i, el] of anotherMenu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
