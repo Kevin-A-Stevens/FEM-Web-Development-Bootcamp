@@ -151,3 +151,38 @@ const entries = Object.entries(openingHours);
 for (const [key, { open, close }] of entries) {
   console.log(`On ${key} we open at ${open} aand close at ${close}.`);
 }
+
+// Sets
+console.log("-----------------SET--------------");
+const ordersSet = new Set([
+  "Pasta",
+  "Pizza",
+  "Pizza",
+  "Risotto",
+  "Pasta",
+  "Pizza",
+]);
+
+console.log(ordersSet);
+console.log(ordersSet.size); // 3
+console.log(ordersSet.has("Pizza")); // true
+ordersSet.add("Bread");
+console.log(ordersSet);
+ordersSet.delete("Risotto");
+console.log(ordersSet);
+// ordersSet.clear();
+
+for (const order of ordersSet) {
+  console.log(order);
+}
+
+// Create an Array with Unique items by removing duplicates
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+console.log(new Set(staff).size);
+
+// How many letters in a string
+console.log("-----------------------");
+console.log(new Set("Kevin Stevens").size);
