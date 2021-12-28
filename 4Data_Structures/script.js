@@ -202,3 +202,27 @@ rest
 console.log(rest.get("name"));
 console.log(rest.has("Categories"));
 console.log(rest.size);
+
+const question = new Map([
+  ["question", "What is the best programming language"],
+  [1, "C"],
+  [2, "Java"],
+  [3, "JavaScript"],
+  [4, "Python"],
+  ["Correct", 3],
+  [true, "Correct"],
+  [false, "Try again"],
+]);
+
+console.log(question.get("question"));
+
+for (const [key, value] of question) {
+  if (typeof key === "number") {
+    console.log(`Answer ${key}: ${value}`);
+  }
+}
+
+const answer = Number(prompt("Your answer: "));
+console.log(answer);
+
+console.log(question.get(question.get("Correct") === answer));
