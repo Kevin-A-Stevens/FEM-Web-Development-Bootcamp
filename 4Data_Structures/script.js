@@ -186,3 +186,19 @@ console.log(new Set(staff).size);
 // How many letters in a string
 console.log("-----------------------");
 console.log(new Set("Kevin Stevens").size);
+
+// Maps
+const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "Firenze Italy");
+rest.set(2, "Lisbon Portugal");
+
+console.log(rest.set(2, "Lisbon Portugal"));
+rest
+  .set("Categories", ["Italian", "Pizzeria"])
+  .set("open", 11)
+  .set("close", 23);
+
+console.log(rest.get("name"));
+console.log(rest.has("Categories"));
+console.log(rest.size);
