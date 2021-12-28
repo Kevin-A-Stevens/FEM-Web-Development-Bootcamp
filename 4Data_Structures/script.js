@@ -130,3 +130,24 @@ console.log("------------------------");
 for (const [i, el] of anotherMenu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
+
+// Looping over objects
+
+for (const day of Object.keys(openingHours)) {
+  console.log(day);
+}
+
+console.log("------------------------");
+
+// Values
+const values = Object.values(openingHours);
+console.log(values);
+
+console.log("------------------------");
+// Entries
+const entries = Object.entries(openingHours);
+// console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+  console.log(`On ${key} we open at ${open} aand close at ${close}.`);
+}
