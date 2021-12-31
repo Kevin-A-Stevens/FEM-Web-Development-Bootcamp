@@ -226,3 +226,14 @@ const answer = Number(prompt("Your answer: "));
 console.log(answer);
 
 console.log(question.get(question.get("Correct") === answer));
+
+// What data structure to sue
+// List of value = use an Array or Set
+// List of key value pairs = use and object or map
+// Using an API getting a JSON = an object makes sense
+
+// Array = store values in order and if values might contain duplicates or want to modify data
+// Set = Working with unique values or high performance is important as they are faster
+
+// Objects = Need functions for values called methods and you can use the this keyword
+// Maps = better performance and better suited. Easy to write and access data.
