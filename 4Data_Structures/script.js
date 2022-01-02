@@ -283,3 +283,30 @@ console.log(normalEmail);
 const plane2 = "A320neo";
 console.log(plane2.includes("320"));
 console.log(plane2.startsWith("A"));
+
+console.log("a+very+nice+string".split("+"));
+const [firstName, lastName] = "Kevin Stevens".split(" "); // creates an array
+console.log(firstName);
+
+// Capitalize name function
+const capitalizeName = function (yourName) {
+  const yourNames = yourName.split(" ");
+  const namesUpper = [];
+
+  for (const n of yourNames) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(" "));
+};
+
+capitalizeName("jessica ann smith davis");
+capitalizeName("kevin alan stevens");
+
+// Padding a string
+const message5 = "Go to gate 23";
+console.log(message5.padStart(25, "+"));
+console.log(message5.padEnd(25, "+"));
+
+// Repeat
+const message3 = "Bad Weather... All departures delayed... ";
+console.log(message3.repeat(5));
