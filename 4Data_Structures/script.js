@@ -101,9 +101,9 @@ console.log(...str);
 console.log(...letters);
 
 const ingredients = [
-  prompt("Let us make pasta! Ingredient 1?"),
-  prompt("Ingredient 2?"),
-  prompt("Ingredient 3?"),
+  // prompt("Let us make pasta! Ingredient 1?"),
+  // prompt("Ingredient 2?"),
+  // prompt("Ingredient 3?"),
 ];
 
 console.log(ingredients);
@@ -216,14 +216,16 @@ const question = new Map([
 
 console.log(question.get("question"));
 
-for (const [key, value] of question) {
-  if (typeof key === "number") {
-    console.log(`Answer ${key}: ${value}`);
-  }
-}
+// for (const [key, value] of question) {
+//   if (typeof key === "number") {const ingredients = [
+//     //   prompt("Let us make pasta! Ingredient 1?"),
+//     //   prompt("Ingredient 2?"),
+//     //   prompt("Ingredient 3?"),
+//     // ];
+// }
 
-const answer = Number(prompt("Your answer: "));
-console.log(answer);
+const answer = 3;
+// console.log(answer);
 
 console.log(question.get(question.get("Correct") === answer));
 
@@ -237,3 +239,47 @@ console.log(question.get(question.get("Correct") === answer));
 
 // Objects = Need functions for values called methods and you can use the this keyword
 // Maps = better performance and better suited. Easy to write and access data.
+
+// String Methods
+
+const airline = "TAP Air Portugal";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(airline.length);
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+
+// Slice method
+console.log(airline.slice(4)); // 4 = where slice will start
+console.log(airline.slice(4, 7)); // 4 = start and 7 = end but is not included
+
+console.log(airline.slice(0, airline.indexOf(" "))); // First word
+console.log(airline.slice(airline.lastIndexOf(" ") + 1)); // Last word
+console.log(airline.slice(-2)); // Start from the 2nd from end
+console.log(airline.slice(1, -1));
+
+console.log(airline.toLowerCase()); // change to all lower case
+console.log(airline.toUpperCase()); // change to all upper case
+
+// Fix capitalization for persons name
+const passenger = "kEvin";
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// Check email
+const email = "hello@kevin.io";
+const logInEmail = "  Hello@Keving.Io \n";
+
+const lowerEmail = logInEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+
+const normalEmail = logInEmail.toLowerCase().trim();
+console.log(trimmedEmail);
+console.log(normalEmail);
+
+const plane2 = "A320neo";
+console.log(plane2.includes("320"));
+console.log(plane2.startsWith("A"));
